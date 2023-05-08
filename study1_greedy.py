@@ -1,3 +1,5 @@
+# 1이 될때 까지 (나동빈, 코딩테스트)
+
 n,m,k = map(int,input().split())
 data = list(map(int,input().split()))
 print(n, m, k )
