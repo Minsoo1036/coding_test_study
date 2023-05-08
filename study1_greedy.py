@@ -3,14 +3,12 @@
 n,m,k = map(int,input().split())
 data = list(map(int,input().split()))
 print(n, m, k )
-data.sort()
+data.sort() #sorting the list
 print(data[-1])
 
-first = int(m/k) * k
-second = m%k
-print("first",first)
-print("second",second)
+num_blocks = m // (k+1)
+spare = m % (k+1)
 
-print(data[-1] * first + data[-2] * second)
+answer = (data[-1] * k + data[-2]) * num_blocks + data[-1] * spare
 
-#print(data[-1]*(k-1))
+print(answer)
