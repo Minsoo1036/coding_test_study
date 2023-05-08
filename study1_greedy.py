@@ -4,7 +4,7 @@ n,m,k = map(int,input().split())
 data = list(map(int,input().split()))
 print(n, m, k )
 data.sort() #sorting the list
-print(data[-1])
+print(data[-1]) # maximum in the list
 
 num_blocks = m // (k+1)
 spare = m % (k+1)
